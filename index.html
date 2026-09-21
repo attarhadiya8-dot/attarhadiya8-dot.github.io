@@ -989,6 +989,91 @@
   }
 
 }
+    /* MOBILE OVERFLOW FIX */
+@media (max-width: 600px) {
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .container {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .hero-grid > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .hero {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 100px 0 60px !important;
+  }
+
+  .hero-art {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(2.8rem, 14vw, 4.5rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.05em !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .hero-sub,
+  .hero-desc {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .hero-sub {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .actions {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+
+  .socials {
+    flex-wrap: wrap !important;
+  }
+
+  .quote {
+    max-width: 280px !important;
+    overflow: visible !important;
+  }
+
+}
 </style>
 </head>
 <body>
